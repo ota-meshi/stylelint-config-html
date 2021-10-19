@@ -11,6 +11,11 @@
 This config bundles the [`postcss-html` custom syntax](https://github.com/ota-meshi/postcss-html) and configures it.  
 If you use this config in your Stylelint config, HTML, XML, [Vue], [Svelte] and [PHP] files will be parsable. The Stylelint rules you have configured will be able to check these files.
 
+> **Requirements**
+>
+> - [Stylelint] v14.0.0 and above  
+>   It cannot be used with Stylelint v13 and below.
+
 To see this config, please read the [config itself](/index.js).
 
 ## :cd: Installation
