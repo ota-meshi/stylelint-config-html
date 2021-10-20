@@ -20,6 +20,18 @@ Stylelint v14 and above has been changed to not bundle non-CSS parsing such as H
 
 To see this config, please read the [config itself](/index.js).
 
+## :couple: Related Packages
+
+### [stylelint-config-recommended-vue](https://github.com/ota-meshi/stylelint-config-recommended-vue)
+
+The recommended shareable [Vue](https://v3.vuejs.org/) config.  
+If you want to check [Vue] files, consider using this as well. It is useful because it contains the config for [Vue](https://v3.vuejs.org/).
+
+### [postcss-html](https://github.com/ota-meshi/postcss-html)
+
+[PostCSS] syntax for parsing HTML (and HTML-like).  
+If you have problems with parses using this config, please open the new issue in that repository.
+
 ## :cd: Installation
 
 ```shell
@@ -60,3 +72,4 @@ See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
 [Vue]: https://v3.vuejs.org/guide/single-file-component.html
 [Svelte]: https://svelte.dev/docs#Component_format
 [PHP]: https://www.php.net/manual/en/intro-whatis.php
+[PostCss]: https://github.com/postcss/postcss
