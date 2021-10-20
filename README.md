@@ -14,7 +14,9 @@ If you use this config in your Stylelint config, HTML, XML, [Vue], [Svelte] and 
 > **Requirements**
 >
 > - [Stylelint] v14.0.0 and above  
->   It cannot be used with Stylelint v13 and below.
+>   This config cannot be used with Stylelint v13 and below. Also, if you are using Stylelint v13, you do not need to use this config.
+
+Stylelint v14 and above has been changed to not bundle non-CSS parsing such as HTML. The goal of this config is to make Stylelint v14 work with HTML (and HTML-like) files, like Stylelint v13.
 
 To see this config, please read the [config itself](/index.js).
 
