@@ -35,7 +35,7 @@ If you have problems with parses using this config, please open the new issue in
 ## :cd: Installation
 
 ```shell
-npm install --save-dev stylelint-config-html
+npm install --save-dev postcss-html stylelint-config-html
 ```
 
 ## :book: Usage

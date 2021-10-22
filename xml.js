@@ -2,7 +2,6 @@
 
 const extensions = [
     // https://github.com/Microsoft/vscode/blob/master/extensions/xml/package.json
-
     ".xml",
     ".xsd",
     ".ascx",
