@@ -53,6 +53,7 @@
         "url": "git+https://github.com/ota-meshi/stylelint-config-html.git"
     },
     "author": "Yosuke Ota (https://github.com/ota-meshi)",
+    "funding": "https://github.com/sponsors/ota-meshi",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/ota-meshi/stylelint-config-html/issues"
