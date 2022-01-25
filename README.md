@@ -22,9 +22,9 @@ To see this config, please read the [config itself](/index.js).
 
 ## :couple: Related Packages
 
-### [stylelint-config-recommended-vue](https://github.com/ota-meshi/stylelint-config-recommended-vue)
+### [stylelint-config-recommended-vue](https://github.com/ota-meshi/stylelint-config-recommended-vue) / [stylelint-config-standard-vue](https://github.com/ota-meshi/stylelint-config-standard-vue)
 
-The recommended shareable [Vue](https://v3.vuejs.org/) config.  
+The shareable config for [Vue](https://v3.vuejs.org/).  
 If you want to check [Vue] files, consider using this as well. It is useful because it contains the config for [Vue](https://v3.vuejs.org/).
 
 ### [postcss-html](https://github.com/ota-meshi/postcss-html)
