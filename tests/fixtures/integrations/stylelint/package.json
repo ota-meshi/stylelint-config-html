@@ -1,15 +1,15 @@
 {
-    "name": "stylelint-config-html-test-stylelint",
-    "private": true,
-    "version": "1.0.0",
-    "description": "",
-    "devDependencies": {
-        "postcss-html": "^1.0.1",
-        "stylelint": "^14.0.0-0",
-        "stylelint-config-html": "file:../../../../",
-        "stylelint-config-recommended": "^6.0.0-0"
-    },
-    "engines": {
-        "node": "^12 || >=14"
-    }
+  "name": "stylelint-config-html-test-stylelint",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "postcss-html": "^1.0.1",
+    "stylelint": "^14.0.0-0",
+    "stylelint-config-html": "file:../../../../",
+    "stylelint-config-recommended": "^6.0.0-0"
+  },
+  "engines": {
+    "node": "^12 || >=14"
+  }
 }
