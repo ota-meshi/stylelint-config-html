@@ -1,6 +1,9 @@
 "use strict";
 
-const extensions = [".astro"];
+const extensions = [
+  // https://github.com/withastro/language-tools/blob/main/packages/vscode/package.json
+  ".astro",
+];
 module.exports = {
   overrides: [
     {
