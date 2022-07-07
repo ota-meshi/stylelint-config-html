@@ -29,6 +29,9 @@ describe("Integration with stylelint", () => {
   it("should lint without errors with svelte", () => {
     cp.execSync(`${STYLELINT} src/valid.svelte`, { stdio: "inherit" });
   });
+  it("should lint without errors with astro", () => {
+    cp.execSync(`${STYLELINT} src/valid.astro`, { stdio: "inherit" });
+  });
   it("should lint without errors with php", () => {
     cp.execSync(`${STYLELINT} src/valid.php`, { stdio: "inherit" });
   });
@@ -37,7 +40,7 @@ describe("Integration with stylelint", () => {
       cp.execSync(`${STYLELINT} src/invalid.html`, { stdio: "inherit" });
       fail("Expect an error, but without errors");
     } catch {
-      // Expected!s
+      // Expected!
     }
   });
   it("should lint with errors with vue", () => {
@@ -45,7 +48,23 @@ describe("Integration with stylelint", () => {
       cp.execSync(`${STYLELINT} src/invalid.vue`, { stdio: "inherit" });
       fail("Expect an error, but without errors");
     } catch {
-      // Expected!s
+      // Expected!
+    }
+  });
+  it("should lint with errors with svelte", () => {
+    try {
+      cp.execSync(`${STYLELINT} src/invalid.svelte`, { stdio: "inherit" });
+      fail("Expect an error, but without errors");
+    } catch {
+      // Expected!
+    }
+  });
+  it("should lint with errors with astro", () => {
+    try {
+      cp.execSync(`${STYLELINT} src/invalid.astro`, { stdio: "inherit" });
+      fail("Expect an error, but without errors");
+    } catch {
+      // Expected!
     }
   });
 });
