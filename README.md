@@ -9,7 +9,7 @@
 > The shareable HTML (and HTML-like) config for [Stylelint].
 
 This config bundles the [`postcss-html` custom syntax](https://github.com/ota-meshi/postcss-html) and configures it.  
-If you use this config in your Stylelint config, HTML, XML, [Vue], [Svelte] and [PHP] files will be parsable. The Stylelint rules you have configured will be able to check these files.
+If you use this config in your Stylelint config, HTML, XML, [Vue], [Svelte], [Astro], and [PHP] files will be parsable. The Stylelint rules you have configured will be able to check these files.
 
 > **Requirements**
 >
@@ -59,6 +59,7 @@ If you want to enable parsing for only specific language, use each language conf
     "stylelint-config-html/xml",
     "stylelint-config-html/vue",
     "stylelint-config-html/svelte",
+    "stylelint-config-html/astro",
     "stylelint-config-html/php"
   ]
 }
@@ -84,6 +85,8 @@ Example **.vscode/settings.json**:
       "vue",
       // ↓ Add "svelte" language.
       "svelte",
+      // ↓ Add "astro" language.
+      "astro",
   ]
 ```
 
@@ -94,5 +97,6 @@ See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
 [Stylelint]: https://stylelint.io/
 [Vue]: https://v3.vuejs.org/guide/single-file-component.html
 [Svelte]: https://svelte.dev/docs#Component_format
+[Astro]: https://docs.astro.build/core-concepts/astro-components/
 [PHP]: https://www.php.net/manual/en/intro-whatis.php
 [PostCss]: https://github.com/postcss/postcss

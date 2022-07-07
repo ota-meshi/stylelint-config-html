@@ -17,6 +17,7 @@
     "html.js",
     "vue.js",
     "svelte.js",
+    "astro.js",
     "php.js",
     "xml.js"
   ],

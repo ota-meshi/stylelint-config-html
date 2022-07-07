@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "devDependencies": {
-    "postcss-html": "^1.0.1",
+    "postcss-html": "^1.5.0",
     "stylelint": "^14.0.0-0",
     "stylelint-config-html": "file:../../../../",
     "stylelint-config-recommended": "^6.0.0-0"
