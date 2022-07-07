@@ -71,7 +71,7 @@ If you want to enable parsing for only specific language, use each language conf
 
 Use the [stylelint.vscode-stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) extension that [Stylelint] provides officially.
 
-You have to configure the `stylelint.validate` option of the extension to check `.html`,  `.vue`,  `.svelte`, and HTML-like files, because the extension does not check the `*.html` and HTML-like file by default.
+You have to configure the `stylelint.validate` option of the extension to check `.html`, `.vue`, `.svelte`, `.astro`, and HTML-like files, because the extension does not check the `*.html` and HTML-like file by default.
 
 Example **.vscode/settings.json**:
 
