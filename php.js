@@ -1,5 +1,3 @@
-"use strict";
-
 const extensions = [
   // https://github.com/Microsoft/vscode/blob/main/extensions/php/package.json
   ".php",
@@ -9,7 +7,7 @@ const extensions = [
   ".ctp",
 ];
 
-module.exports = {
+const config = {
   overrides: [
     {
       files: extensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -17,3 +15,6 @@ module.exports = {
     },
   ],
 };
+
+export default config;
+export { config as "module.exports" };

@@ -1,5 +1,3 @@
-"use strict";
-
 const extensions = [
   // https://github.com/Microsoft/vscode/blob/master/extensions/html/package.json
   ".html",
@@ -17,7 +15,7 @@ const extensions = [
   ".rhtml",
 ];
 
-module.exports = {
+const config = {
   overrides: [
     {
       files: extensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -25,3 +23,6 @@ module.exports = {
     },
   ],
 };
+
+export default config;
+export { config as "module.exports" };

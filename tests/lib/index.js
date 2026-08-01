@@ -1,8 +1,7 @@
-"use strict";
-
-const { fail } = require("assert");
-const cp = require("child_process");
-const path = require("path");
+import { fail } from "node:assert";
+import cp from "node:child_process";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const STYLELINT = `.${path.sep}node_modules${path.sep}.bin${path.sep}stylelint`;
 
@@ -11,7 +10,11 @@ describe("Integration with stylelint", () => {
 
   before(() => {
     originalCwd = process.cwd();
-    process.chdir(path.join(__dirname, "../fixtures/integrations/stylelint"));
+    process.chdir(
+      fileURLToPath(
+        new URL("../fixtures/integrations/stylelint", import.meta.url),
+      ),
+    );
     cp.execSync("npm i --no-package-lock", {
       stdio: "inherit",
     });

@@ -1,10 +1,9 @@
-"use strict";
-
 const extensions = [
   // https://github.com/sveltejs/language-tools/blob/master/packages/svelte-vscode/package.json
   ".svelte",
 ];
-module.exports = {
+
+const config = {
   overrides: [
     {
       files: extensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -12,3 +11,6 @@ module.exports = {
     },
   ],
 };
+
+export default config;
+export { config as "module.exports" };
