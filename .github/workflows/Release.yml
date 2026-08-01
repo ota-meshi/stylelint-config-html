@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: "24"
+          node-version: lts/*
       - name: Install Dependencies
         run: npm i --legacy-peer-deps
       - name: Create Release Pull Request or Publish to npm
