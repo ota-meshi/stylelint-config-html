@@ -32,8 +32,8 @@
     "changeset:publish": "changeset publish"
   },
   "peerDependencies": {
-    "postcss-html": "^1.0.0",
-    "stylelint": ">=14.0.0"
+    "postcss-html": "^2.0.0",
+    "stylelint": ">=16.0.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.7.0",

@@ -12,7 +12,7 @@ describe("Integration with stylelint", () => {
   before(() => {
     originalCwd = process.cwd();
     process.chdir(path.join(__dirname, "../fixtures/integrations/stylelint"));
-    cp.execSync("npm i --no-package-lock --legacy-peer-deps", {
+    cp.execSync("npm i --no-package-lock", {
       stdio: "inherit",
     });
   });
@@ -34,6 +34,9 @@ describe("Integration with stylelint", () => {
   });
   it("should lint without errors with php", () => {
     cp.execSync(`${STYLELINT} src/valid.php`, { stdio: "inherit" });
+  });
+  it("should lint without errors with xml", () => {
+    cp.execSync(`${STYLELINT} src/valid.xml`, { stdio: "inherit" });
   });
   it("should lint with errors with html", () => {
     try {
@@ -62,6 +65,14 @@ describe("Integration with stylelint", () => {
   it("should lint with errors with astro", () => {
     try {
       cp.execSync(`${STYLELINT} src/invalid.astro`, { stdio: "inherit" });
+      fail("Expect an error, but without errors");
+    } catch {
+      // Expected!
+    }
+  });
+  it("should lint with errors with xml", () => {
+    try {
+      cp.execSync(`${STYLELINT} src/invalid.xml`, { stdio: "inherit" });
       fail("Expect an error, but without errors");
     } catch {
       // Expected!
