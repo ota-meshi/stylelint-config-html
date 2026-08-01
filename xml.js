@@ -1,5 +1,3 @@
-"use strict";
-
 const extensions = [
   // https://github.com/Microsoft/vscode/blob/master/extensions/xml/package.json
   ".xml",
@@ -68,7 +66,8 @@ const extensions = [
   ".xsl",
   ".xslt",
 ];
-module.exports = {
+
+const config = {
   overrides: [
     {
       files: extensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -76,3 +75,6 @@ module.exports = {
     },
   ],
 };
+
+export default config;
+export { config as "module.exports" };

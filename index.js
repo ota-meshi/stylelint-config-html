@@ -1,12 +1,20 @@
-"use strict";
+import astro from "./astro.js";
+import html from "./html.js";
+import php from "./php.js";
+import svelte from "./svelte.js";
+import vue from "./vue.js";
+import xml from "./xml.js";
 
-module.exports = {
-  extends: [
-    require.resolve("./html.js"),
-    require.resolve("./vue.js"),
-    require.resolve("./php.js"),
-    require.resolve("./svelte.js"),
-    require.resolve("./astro.js"),
-    require.resolve("./xml.js"),
+const config = {
+  overrides: [
+    ...html.overrides,
+    ...vue.overrides,
+    ...php.overrides,
+    ...svelte.overrides,
+    ...astro.overrides,
+    ...xml.overrides,
   ],
 };
+
+export default config;
+export { config as "module.exports" };

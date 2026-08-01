@@ -11,7 +11,24 @@
     "php",
     "xml"
   ],
+  "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./html": "./html.js",
+    "./html.js": "./html.js",
+    "./vue": "./vue.js",
+    "./vue.js": "./vue.js",
+    "./svelte": "./svelte.js",
+    "./svelte.js": "./svelte.js",
+    "./astro": "./astro.js",
+    "./astro.js": "./astro.js",
+    "./php": "./php.js",
+    "./php.js": "./php.js",
+    "./xml": "./xml.js",
+    "./xml.js": "./xml.js",
+    "./package.json": "./package.json"
+  },
   "files": [
     "index.js",
     "html.js",

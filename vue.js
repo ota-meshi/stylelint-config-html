@@ -1,10 +1,9 @@
-"use strict";
-
 const extensions = [
   // https://v3.vuejs.org/api/sfc-spec.html
   ".vue",
 ];
-module.exports = {
+
+const config = {
   overrides: [
     {
       files: extensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -12,3 +11,6 @@ module.exports = {
     },
   ],
 };
+
+export default config;
+export { config as "module.exports" };
